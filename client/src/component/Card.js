@@ -6,8 +6,8 @@ export default function Card(props) {
         <div className='container'>
             {props.users.map(users => (
                 <div className='card' key={users.id}>
-                    <h4>{users.login}</h4>
-                    <img className='img' src={users.avatar_url} alt={users.name} />
+                    <h4>{users.name}</h4>
+                    <h4>{users.country}</h4>
                 </div>
             ))}
         </div>
